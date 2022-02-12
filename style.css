@@ -107,7 +107,7 @@ h4 {
 .header-info {
     text-align: left;
     height: 90vh;
-    background: url(/img/prueba2.png);
+    background-image: url('https://i.postimg.cc/28BZF4Pg/prueba2.png');
     background-position: center;
 }
 
@@ -145,7 +145,8 @@ h4 {
 }
 
 .imgMia {
-    background-image: linear-gradient(45deg, black, transparent), url(/img/img.png);
+    background-image: linear-gradient(45deg, black, transparent), url('https://i.postimg.cc/vBcN0q7W/yo.jpg');
+    background: lightsalmon;
     height: 60vh;
     background-size: cover;
     position: relative;
