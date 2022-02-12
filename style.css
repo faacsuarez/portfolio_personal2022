@@ -1,3 +1,5 @@
+/* ------- ESTILOS GENERALES -------- */
+
 * {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -25,6 +27,18 @@ h4 {
 
 
 /* ------- MENU HAMBURGUESA -------- */
+
+#nav {
+    height: 10vh;
+    background: #721B29;
+}
+
+#nav .container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .menu {
     display: none;
     background-color: #721B29;
@@ -88,7 +102,6 @@ h4 {
     transform: rotatez(-45deg);
 }
 
-
 /* ------- HEADER -------- */
 
 .header-info {
@@ -106,7 +119,6 @@ h4 {
     margin: 1.3em 0;
 }
 
-
 .header-info a {
     display: inline-block;
     padding: 15px 20px;
@@ -114,6 +126,7 @@ h4 {
     color: white;
     background: black;
     align-items: center;
+    cursor: pointer;
 }
 
 .header-info ion-icon {
@@ -122,16 +135,6 @@ h4 {
 }
 
 
-#navEntero .container {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#navEntero {
-    height: 10vh;
-}
 
 /* ------- SECTION ONE -------- */
 
@@ -185,9 +188,10 @@ h4 {
     transform: rotate(-180deg);
 }
 
-.entero {
-    width: 100%;
-}
+.tittle {
+    width: 90%;
+    margin: 0 auto;
+} 
 .btn-dropdown--skills {
     margin: 20px 0;
 }
