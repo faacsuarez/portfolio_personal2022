@@ -1,0 +1,253 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.3em;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+/* ------- MENU HAMBURGUESA -------- */
+.menu {
+    display: none;
+    background-color: #721B29;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(150%);
+    transition: transform 0.5s ease-in;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(0%);
+    color: white;
+    z-index: 100;
+}
+
+.menu a {
+    font-size: 1.6em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #414865;
+}
+
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 35px;
+    background: #22314A;
+    height: 5px;
+    border-radius: 10px;
+    margin: 5px 0;
+    transform-origin: left;
+    transition: opacity 0.2s, transform 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.nav-toggle span:nth-child(2){
+    width: 45px;
+}
+
+.cruz span:nth-of-type(2){
+    opacity: 0;
+}
+
+.cruz span:nth-of-type(1){
+    transform: rotatez(45deg);
+}
+
+.cruz span:nth-of-type(3){
+    transform: rotatez(-45deg);
+}
+
+
+/* ------- HEADER -------- */
+
+.header-info {
+    text-align: left;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-info p {
+    margin: 1.3em 0;
+}
+
+
+.header-info a {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: white;
+    background: black;
+    align-items: center;
+}
+
+.header-info ion-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+
+#navEntero .container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navEntero {
+    height: 10vh;
+}
+
+/* ------- SECTION ONE -------- */
+
+#quiensoy {
+    background: grey;
+    margin-top: 40px;
+}
+
+.imgMia {
+    background-image: linear-gradient(45deg, black, transparent), url(/img/img.png);
+    height: 60vh;
+    background-size: cover;
+    position: relative;
+}
+
+.ayuda h2 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-dropdown {
+    background: lightpink;
+    padding: 0.5em 0;
+}
+
+.btn-dropdown--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-dropdown--title ion-icon {
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: transform ease-in-out 0.1s;
+}
+
+.btn-dropdown--info {
+    display: none;
+}
+
+.btn-dropdown--info p {
+    margin: 1em 0;
+    line-height: 1.4;
+}
+
+.apretar.activo ion-icon {
+    color: red;
+    transform: rotate(-180deg);
+}
+
+.entero {
+    width: 100%;
+}
+.btn-dropdown--skills {
+    margin: 20px 0;
+}
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.barra, .porcentaje {
+    height: 10px;
+    border-radius: 0.25rem;
+    background-color: #22314A;
+}
+
+.porcentaje {
+    
+    display: block;
+    background-color: #721B29;
+}
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 90%;
+}
+
+/* ------- RESPONSIVE -------- */
+
+@media screen and (min-width:992px){
+    .ayuda {
+        display: flex;
+        align-items: center;
+    }
+    .header-info {
+        height: auto;
+        width: 50%;
+    }
+    .header-info h1 {
+        font-size: 4em;
+    }
+    .ayuda .header-texture {
+        order: 2;
+        width: 50%;
+        height: 90vh;
+        background-image: url(/img/inicio2.svg);
+        background-size: cover;
+    }
+    .ayuda .imgMia {
+        width: 50%;
+        height: 80vh;
+    }
+    .entero {
+        width: 50%;
+    }
+    .ocultar {
+        display: none;
+    }
+    #quiensoy h2 {
+        position: inherit;
+    }
+}
+
