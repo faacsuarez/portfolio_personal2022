@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 h4 {
     font-size: 1.3em;
@@ -144,14 +144,14 @@ h4 {
     margin-top: 40px;
 }
 
-.imgMia {
+.quiensoy--img {
     background-image: linear-gradient(45deg, black, transparent), url('https://i.postimg.cc/vBcN0q7W/yo.jpg');
     height: 60vh;
     background-size: cover;
     position: relative;
 }
 
-.ayuda h2 {
+.quiensoy--img h2 {
     color: white;
     position: absolute;
     bottom: 0;
@@ -159,57 +159,36 @@ h4 {
 }
 
 .btn-dropdown {
-    background: lightpink;
-    padding: 0.5em 0;
-}
-
-.btn-dropdown--title {
+    background: lightsteelblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 30px 0;
 }
 
-.btn-dropdown--title ion-icon {
-    font-size: 1.4em;
-    cursor: pointer;
-    transition: transform ease-in-out 0.1s;
-}
-
-.btn-dropdown--info {
-    display: none;
-}
-
-.btn-dropdown--info p {
-    margin: 1em 0;
-    line-height: 1.4;
-}
-
-.apretar.activo ion-icon {
-    color: red;
-    transform: rotate(-180deg);
-}
-
-.tittle {
-    width: 90%;
-    margin: 0 auto;
-} 
-.btn-dropdown--skills {
+.btn-dropdown-content {
     margin: 20px 0;
 }
-.informacion {
+.btn-dropdown-titles {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-dropdown-content-head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.barra, .porcentaje {
+
+.btn-dropdown-content-bar, .porcentaje {
     height: 10px;
     border-radius: 0.25rem;
     background-color: #22314A;
 }
 
 .porcentaje {
-    
     display: block;
     background-color: #721B29;
 }
@@ -221,6 +200,138 @@ h4 {
 .css {
     width: 90%;
 }
+
+
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 90%;
+}
+
+
+/* ------- AMPLIACIÓN -------- */
+
+
+.ampliacion h3 {
+    margin: 20px 0;
+}
+
+.ampliacion h4 {
+    margin: 15px 0;
+}
+
+
+.ampliacion-img {
+    background-color: lightslategray;
+    height: 60vh;
+    position: relative;
+}
+
+.ampliacion-img h2 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.description-extra {
+    margin: 20px 0;
+}
+
+.categorias {
+    margin-bottom: 10px;
+}
+
+.categorias a {
+    display: inline-block;
+    background-color: lightsteelblue;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 0.8em;
+    color: black;
+}
+
+.enlace  {
+    display: inline-block;
+    background-color: #22314A;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1em;
+    color: white;
+    margin-top: 10px;
+}
+.colores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.color-individual {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.color-individual p {
+    margin-left: 10px;
+}
+
+.color-individual span {
+    font-weight: bold;
+}
+
+.circulo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circulo.primero {
+    background-color: red;
+}
+.circulo.segundo {
+    background-color: burlywood;
+}
+.circulo.tercero {
+    background-color: yellowgreen;
+}
+
+.tipografia-div {
+    background: url(/img/tipomobile.jpg);
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imagenes-ampliacion div{
+    height: 280px;
+}
+
+.imagenes-ampliacion .img1 {
+    background-color: rosybrown;
+}
+.imagenes-ampliacion .img2 {
+    background-color: royalblue;
+}
+.imagenes-ampliacion .img3 {
+    background-color: lightsalmon;
+}
+
+.agradecimiento {
+    text-align: center;
+}
+
+.agradecimiento span {
+    font-size: 3.2em;
+}
+
+.agradecimiento h4 {
+    margin: 0;
+}
+
 
 /* ------- RESPONSIVE -------- */
 
@@ -243,7 +354,7 @@ h4 {
         background-image: url(/img/inicio2.svg);
         background-size: cover;
     }
-    .ayuda .imgMia {
+    .quiensoy--img {
         width: 50%;
         height: 80vh;
     }
@@ -256,5 +367,17 @@ h4 {
     #quiensoy h2 {
         position: inherit;
     }
+    .tipografia-div {
+        background: url(/img/tipodesktop.jpg);
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .imagenes-ampliacion div{
+        height: 430px;
+    }
 }
+
+
+
 
