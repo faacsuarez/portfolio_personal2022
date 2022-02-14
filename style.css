@@ -14,11 +14,13 @@ h1 {
 }
 
 h2 {
-    font-size: 2.3em;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2.8em;
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.9em;
 }
 h4 {
     font-size: 1.3em;
@@ -248,7 +250,7 @@ h4 {
 .categorias a {
     display: inline-block;
     background-color: lightsteelblue;
-    border-radius: 3px;
+    border-radius: 6px;
     padding: 10px;
     font-size: 0.8em;
     color: black;
@@ -257,7 +259,7 @@ h4 {
 .enlace  {
     display: inline-block;
     background-color: #22314A;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 15px;
     font-size: 1em;
     color: white;
@@ -321,6 +323,7 @@ h4 {
 }
 
 .agradecimiento {
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -331,6 +334,65 @@ h4 {
 .agradecimiento h4 {
     margin: 0;
 }
+
+
+
+
+
+
+.trabajos-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-row-gap: 30px;
+}
+/*
+.trabajos-grid article:nth-child(1){
+    background: rosybrown;
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+*/
+
+.trabajos-grid article:nth-child(1){
+    background: rosybrown;
+    grid-area: 1 / 1 / 6 / 4;
+}
+
+.trabajos-grid article:nth-child(2){
+    background: yellow;
+    grid-area: 1 / 4 / 3 / 7;
+}
+
+.trabajos-grid article:nth-child(3){
+    background: lemonchiffon;
+    grid-area: 1 / 7 / 4 / 10;
+}
+.trabajos-grid article:nth-child(4){
+    background: goldenrod;
+    grid-area: 6 / 1 / 8 / 4;
+}
+.trabajos-grid article:nth-child(5){
+    background: paleturquoise;
+    grid-area: 3 / 4 / 6 / 7;
+}
+.trabajos-grid article:nth-child(6){
+    background: plum;
+    grid-area: 4 / 7 / 9 / 10;
+}
+.trabajos-grid article:nth-child(7){
+    background: lightsalmon;
+    grid-area: 8 / 1 / 11 / 4;
+}
+.trabajos-grid article:nth-child(8){
+    background: blue;
+    grid-area: 6 / 4 / 11 / 7;
+}
+.trabajos-grid article:nth-child(9){
+    background: olive;
+    grid-area: 9 / 7 / 11 / 10;
+}
+
 
 
 /* ------- RESPONSIVE -------- */
